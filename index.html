@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Segurança digital no dia a dia</title>
+<meta name="description" content="Guia prático e quiz para se proteger de golpes digitais.">
+<style>
+:root{--bg:#f7f9fc;--card:#fff;--text:#14213d;--muted:#46536b;--accent:#0b5cad;--ok:#146c2e;--bad:#9b1c1c;--line:#c9d3e0}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1b2d;--card:#172640;--text:#f2f5fa;--muted:#c3cee0;--accent:#7cb7ff;--ok:#7fe0a0;--bad:#ff9d9d;--line:#34496b}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:18px;line-height:1.6;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--card);padding:8px;z-index:9}
+header{padding:48px 20px 32px;max-width:900px;margin:auto}
+header h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px}
+header p{color:var(--muted);margin:0 0 20px;max-width:640px}
+nav a{display:inline-block;margin:0 8px 8px 0;padding:10px 16px;border:2px solid var(--accent);border-radius:8px;text-decoration:none;font-weight:600}
+main{max-width:900px;margin:auto;padding:0 20px 48px}
+section{margin:36px 0}
+h2{font-size:26px;margin:0 0 14px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 8px;font-size:20px}
+.card ul{margin:0;padding-left:20px}
+.alert{border-left:6px solid var(--accent);background:var(--card);padding:16px 20px;border-radius:8px}
+fieldset{border:1px solid var(--line);border-radius:12px;background:var(--card);margin:0 0 16px;padding:16px 20px}
+legend{font-weight:700;padding:0 6px}
+label{display:block;padding:10px 8px;border-radius:8px;cursor:pointer}
+label:hover{background:rgba(11,92,173,.1)}
+input[type=radio]{width:22px;height:22px;margin-right:10px;vertical-align:middle}
+button,.btn{font:inherit;font-weight:700;background:var(--accent);color:#fff;border:0;border-radius:10px;padding:14px 24px;cursor:pointer;text-decoration:none;display:inline-block;min-height:48px}
+@media (prefers-color-scheme:dark){button,.btn{color:#0f1b2d}}
+button.sec{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+:focus-visible{outline:3px solid #f5a300;outline-offset:2px}
+.fb{margin-top:10px;font-weight:600}.fb.ok{color:var(--ok)}.fb.bad{color:var(--bad)}
+.exp{color:var(--muted);font-weight:400;margin-top:4px}
+#score{font-size:22px;font-weight:700;margin-top:16px}
+footer{max-width:900px;margin:auto;padding:24px 20px 48px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<a class="skip" href="#guia">Ir para o conteúdo</a>
+<header>
+  <h1>Segurança digital no dia a dia</h1>
+  <p>Orientações curtas e em linguagem simples para você se proteger de golpes na internet, no celular e nas mensagens.</p>
+  <nav aria-label="Seções da página">
+    <a href="#guia">Guia prático</a><a href="#quiz">Quiz</a><a href="#feedback">Sua opinião</a>
+  </nav>
+</header>
+<main>
+  <section id="guia" aria-labelledby="t-guia">
+    <h2 id="t-guia">Guia prático</h2>
+    <div class="grid">
+      <article class="card"><h3>1. Senhas fortes</h3>
+        <ul><li>Use frases longas, como quatro palavras sem relação entre si.</li>
+        <li>Nunca use a mesma senha em dois serviços.</li>
+        <li>Evite nomes, datas de nascimento e sequências como 123456.</li>
+        <li>Um gerenciador de senhas ajuda a guardar todas elas.</li></ul></article>
+      <article class="card"><h3>2. Autenticação em dois fatores</h3>
+        <ul><li>É uma segunda confirmação além da senha, como um código no celular.</li>
+        <li>Ative no e-mail, nas redes sociais e no banco.</li>
+        <li>Prefira o aplicativo autenticador ao SMS, quando possível.</li>
+        <li>Nunca compartilhe esse código com ninguém.</li></ul></article>
+      <article class="card"><h3>3. Como reconhecer phishing</h3>
+        <ul><li>Mensagens com urgência, ameaça ou prêmio inesperado.</li>
+        <li>Links com endereços estranhos ou com letras trocadas.</li>
+        <li>Pedidos de senha, código ou dados do cartão.</li>
+        <li>Na dúvida, não clique: abra o aplicativo ou o site oficial digitando o endereço.</li></ul></article>
+      <article class="card"><h3>4. Golpes mais comuns</h3>
+        <ul><li>Falso contato do banco pedindo um código.</li>
+        <li>Mensagem de &ldquo;familiar&rdquo; com número novo pedindo dinheiro.</li>
+        <li>Falsas ofertas e encomendas com taxa a pagar.</li>
+        <li>Anúncios de investimento com lucro garantido.</li></ul></article>
+    </div>
+    <p class="alert" style="margin-top:20px"><strong>Regra de ouro:</strong> nenhum banco ou serviço sério pede a sua senha ou um código recebido por mensagem. Se pedirem, é golpe.</p>
+  </section>
+
+  <section id="quiz" aria-labelledby="t-quiz">
+    <h2 id="t-quiz">Quiz: teste o que você aprendeu</h2>
+    <p>São 5 perguntas. Não há nota mínima: cada resposta vem com uma explicação.</p>
+    <form id="quizForm" onsubmit="return false"></form>
+    <button id="btnCheck" type="button">Ver resultado</button>
+    <button id="btnReset" type="button" class="sec">Refazer</button>
+    <div id="score" role="status" aria-live="polite"></div>
+  </section>
+
+  <section id="feedback" aria-labelledby="t-fb">
+    <h2 id="t-fb">Sua opinião</h2>
+    <p>Responda a um formulário rápido de 2 minutos. Isso me ajuda a melhorar este material.</p>
+    <a id="formLink" class="btn" href="#feedback" aria-describedby="formNote">Abrir formulário de feedback</a>
+    <p id="formNote" class="exp"></p>
+  </section>
+</main>
+<footer>
+  Projeto de Atividade Extensionista II, Uninter, desenvolvido por Julia Sampaio (RU 4913744). ODS 4, 10 e 16.
+  Material baseado em boas práticas de segurança da informação, como as da <a href="https://cartilha.cert.br">Cartilha de Segurança para Internet (CERT.br)</a>.
+</footer>
+
+<script>
+// Cole aqui o link público do seu Google Forms:
+var FORM_URL = "";
+
+var perguntas = [
+ {q:"Qual destas senhas é a mais segura?",
+  o:["123456","O seu nome e a data de nascimento","Uma frase longa, como cafe-janela-nuvem-bicicleta","A mesma senha em todos os sites, para não esquecer"],
+  c:2, e:"Frases longas são difíceis de adivinhar e fáceis de lembrar. Reutilizar a mesma senha em todo lugar é arriscado: se uma conta vaza, todas ficam expostas."},
+ {q:"Você recebe um SMS do \"banco\" com um link para \"regularizar sua conta\". O que fazer?",
+  o:["Clicar no link e preencher os dados rapidamente","Não clicar e abrir o aplicativo ou o site oficial do banco por conta própria","Encaminhar a mensagem para os amigos","Responder ao SMS pedindo mais informações"],
+  c:1, e:"Mensagens com urgência e link são o sinal clássico de phishing. Sempre entre pelo aplicativo ou site oficial, digitando o endereço."},
+ {q:"Para que serve a autenticação em dois fatores?",
+  o:["Para criar duas senhas iguais","Para pedir uma segunda confirmação além da senha","Para apagar a conta depois de dois erros","Para deixar o site mais rápido"],
+  c:1, e:"Mesmo que alguém descubra a sua senha, ainda precisará do segundo fator, como o código do aplicativo autenticador."},
+ {q:"Alguém liga dizendo ser do banco e pede o código que você acabou de receber por SMS. O que fazer?",
+  o:["Passar o código, pois a pessoa parece séria","Passar só metade do código","Desligar e nunca compartilhar o código com ninguém","Pedir que a pessoa mande o código por e-mail"],
+  c:2, e:"O código é pessoal. Nenhuma instituição séria pede esse dado. Desligue e, se quiser, ligue você mesma para o número oficial."},
+ {q:"Qual é o cuidado mais adequado ao usar uma rede Wi-Fi pública?",
+  o:["Fazer transferências bancárias normalmente","Evitar acessar banco e dados sensíveis, ou usar os dados móveis","Usar a mesma senha em tudo","Desligar o celular"],
+  c:1, e:"Redes públicas podem ser monitoradas ou falsas. Para operações sensíveis, prefira os dados móveis do celular."}
+];
+
+var form = document.getElementById("quizForm");
+perguntas.forEach(function(p,i){
+  var fs = document.createElement("fieldset");
+  var lg = document.createElement("legend"); lg.textContent = (i+1)+". "+p.q; fs.appendChild(lg);
+  p.o.forEach(function(t,j){
+    var lb = document.createElement("label");
+    var r = document.createElement("input"); r.type="radio"; r.name="q"+i; r.value=j;
+    lb.appendChild(r); lb.appendChild(document.createTextNode(t)); fs.appendChild(lb);
+  });
+  var fb = document.createElement("div"); fb.className="fb"; fb.id="fb"+i; fb.setAttribute("aria-live","polite"); fs.appendChild(fb);
+  form.appendChild(fs);
+});
+
+document.getElementById("btnCheck").addEventListener("click", function(){
+  var certas = 0, respondidas = 0;
+  perguntas.forEach(function(p,i){
+    var sel = form.querySelector('input[name="q'+i+'"]:checked');
+    var fb = document.getElementById("fb"+i);
+    if(!sel){ fb.className="fb"; fb.textContent="Você ainda não respondeu esta pergunta."; return; }
+    respondidas++;
+    var ok = Number(sel.value)===p.c; if(ok) certas++;
+    fb.className = "fb " + (ok?"ok":"bad");
+    fb.innerHTML = "";
+    var s = document.createElement("div"); s.textContent = ok ? "Resposta correta." : "Não foi desta vez. Resposta certa: "+p.o[p.c]+".";
+    var d = document.createElement("div"); d.className="exp"; d.textContent=p.e;
+    fb.appendChild(s); fb.appendChild(d);
+  });
+  document.getElementById("score").textContent = respondidas<perguntas.length
+    ? "Responda todas as perguntas para ver o resultado final ("+respondidas+" de "+perguntas.length+" respondidas)."
+    : "Você acertou "+certas+" de "+perguntas.length+".";
+});
+document.getElementById("btnReset").addEventListener("click", function(){
+  form.reset();
+  perguntas.forEach(function(p,i){ var f=document.getElementById("fb"+i); f.textContent=""; f.className="fb"; });
+  document.getElementById("score").textContent="";
+});
+
+var link = document.getElementById("formLink"), note = document.getElementById("formNote");
+if(FORM_URL){ link.href = FORM_URL; link.target="_blank"; link.rel="noopener"; }
+else { note.textContent = "Link do formulário ainda não configurado."; }
+</script>
+</body>
+</html>
